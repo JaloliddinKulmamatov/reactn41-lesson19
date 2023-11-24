@@ -57,6 +57,22 @@
     gap: 90px;
   }
 }
+@media (min-width: 1120px) {
+  .piece-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 90px;
+  }
+}
+@media (min-width: px) {
+  .piece-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 90px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -104,6 +120,8 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 nav img {
   margin-right: 16px;
@@ -129,6 +147,12 @@ nav li {
 }
 nav li:hover {
   font-weight: 600;
+}
+
+.navbar-shrink {
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 2px 4px #68997d;
+          box-shadow: 0px 0px 2px 4px #68997d;
 }
 
 .nav__ul {
@@ -230,26 +254,26 @@ nav li:hover {
   margin-bottom: 150px;
 }
 
-.piece__1__left h4 {
+.piece__1__left h4, .piece-3 h4 {
   color: #22343D;
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 8px;
 }
-.piece__1__left h1 {
+.piece__1__left h1, .piece-3 h1 {
   color: #22343D;
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 23px;
 }
-.piece__1__left p {
+.piece__1__left p, .piece-3 p {
   color: #22343D;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
   margin-bottom: 25px;
 }
-.piece__1__left .name__p {
+.piece__1__left .name__p, .piece-3 .name__p {
   font-weight: 600;
   margin-bottom: 12px;
 }
@@ -282,4 +306,37 @@ nav li:hover {
           align-items: center;
   gap: 30px;
   margin-bottom: 47px;
+}
+
+.contact__text h1 {
+  color: #22343D;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  margin-top: 220px;
+}
+.contact__text p {
+  color: #22343D;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  margin-bottom: 32px;
+}
+
+.persons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  margin-bottom: 53px;
+}
+.persons p {
+  color: #22343D;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  margin-bottom: 32px;
 }
