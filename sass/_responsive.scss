@@ -65,9 +65,21 @@
     }
 }
 
-@media (min-width:px) {
-    .piece-3 {
-        display: flex;
-        gap: 90px;
+
+@media (min-width:920px) {
+    .contact__person {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr)
     }
 }
+
+@media (min-width:1120px) {
+    .contact__text{
+        h1, p {
+            text-align: center;
+        }
+        
+    }
+}
+
+

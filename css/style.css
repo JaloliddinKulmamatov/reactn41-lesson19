@@ -65,12 +65,15 @@
     gap: 90px;
   }
 }
-@media (min-width: px) {
-  .piece-3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 90px;
+@media (min-width: 920px) {
+  .contact__person {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
+@media (min-width: 1120px) {
+  .contact__text h1, .contact__text p {
+    text-align: center;
   }
 }
 * {
@@ -323,6 +326,12 @@ nav li:hover {
   margin-bottom: 32px;
 }
 
+.contact__button {
+  padding: 15px 30px;
+  margin-bottom: 164px;
+  max-width: 216px;
+}
+
 .persons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -339,4 +348,9 @@ nav li:hover {
   font-weight: 500;
   line-height: 26px;
   margin-bottom: 32px;
+  background-color: #EDEDED;
+  padding: 15px 25px;
+  border-radius: 26.5px;
+  -webkit-box-shadow: 0px 2px 15px 0px rgba(23, 58, 86, 0.1);
+          box-shadow: 0px 2px 15px 0px rgba(23, 58, 86, 0.1);
 }
